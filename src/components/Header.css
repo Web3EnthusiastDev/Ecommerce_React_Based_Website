@@ -1,0 +1,97 @@
+/* General header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+    position: relative; /* Allow positioning of the cart icon */
+}
+
+/* Header container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between cart icon and navigation items */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Ensure the container is properly positioned */
+}
+
+/* Cart icon styling */
+.cart {
+    display: flex; /* Ensure proper alignment */
+    align-items: center; /* Center the icon vertically */
+    margin-right: 20px; /* Space between cart icon and navigation items */
+}
+
+.cart svg {
+    width: 40px; /* Set width for the icon */
+    height: 40px; /* Set height for the icon */
+    color: #fff; /* Ensure the icon is visible */
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Navigation ul styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Navigation link and button styling */
+nav ul li a,
+nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #444; /* Default background for links and buttons */
+    border: none; /* Remove borders for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+/* Active link styling */
+nav ul li a.active,
+nav ul li button.active {
+    background-color: #e94e77; /* Highlight color for active link/button */
+    color: #fff; /* Ensure text color is readable on highlighted background */
+}
+
+/* Hover effect for all buttons and links */
+nav ul li a:hover,
+nav ul li button:hover {
+    background-color: #e94e77;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stack navigation items and buttons vertically on mobile */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a,
+    nav ul li button {
+        width: 100%; /* Full width for better tap targets */
+        padding: 10px;
+    }
+}

@@ -1,0 +1,179 @@
+/* Base Colors */
+:root {
+    --primary-color: #007bff; /* Bright blue for primary actions */
+    --primary-color-dark: #0056b3; /* Darker shade of blue for hover states */
+    --secondary-color: #f2f2f2; /* Light gray background for sections */
+    --card-background: #ffffff; /* White background for info cards */
+    --card-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    --text-dark: #333333; /* Dark gray for text */
+    --text-light: #666666; /* Light gray for secondary text */
+    --button-hover-color: #0056b3; /* Darker blue for button hover */
+    --link-hover-color: #0056b3; /* Darker blue for link hover */
+}
+
+/* Container Styling */
+.contact-us-container {
+    padding: 3rem;
+    background-color: var(--secondary-color); /* Light gray background */
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px; /* More pronounced rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+}
+
+/* Section Styling */
+.contact-us-intro,
+.contact-us-info,
+.contact-us-form,
+.contact-us-social {
+    margin-bottom: 2rem;
+    text-align: center; /* Center align text outside the boxes */
+}
+
+/* Intro Section Styling */
+.contact-us-intro h1 {
+    color: var(--text-dark); /* Dark text color */
+    font-size: 2.75rem; /* Larger font size for intro */
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-weight: 700; /* Bold font weight */
+}
+
+.contact-us-intro p {
+    font-size: 1.25rem; /* Slightly larger text */
+    color: var(--text-light); /* Light gray text color */
+    line-height: 1.8; /* Improved line height for readability */
+    font-family: 'Open Sans', sans-serif; /* Modern font */
+}
+
+/* Info Cards Styling */
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Gap between cards */
+    justify-content: center; /* Center align cards */
+}
+
+.info-card {
+    flex: 1 1 calc(33.333% - 1.5rem); /* Responsive card width */
+    background-color: var(--card-background); /* White background */
+    padding: 2rem; /* Increased padding inside cards */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 6px 12px var(--card-shadow); /* Enhanced shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition effects */
+    text-align: left; /* Left align text inside cards */
+}
+
+.info-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Lift card effect on hover */
+}
+
+.info-card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark); /* Dark text color for headings */
+    font-size: 1.5rem; /* Larger font size for headings */
+}
+
+.info-card p {
+    color: var(--text-light); /* Light gray text color */
+    font-size: 1.125rem; /* Slightly larger font size */
+}
+
+/* Form Styling */
+.contact-us-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Gap between form elements */
+    align-items: center; /* Center align form elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for form elements */
+    max-width: 600px; /* Restrict form width */
+    align-items: flex-start; /* Align form elements to the left */
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark); /* Dark text color for labels */
+    font-weight: 600; /* Bold labels */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for form elements */
+    font-size: 1rem;
+    width: 100%;
+    background-color: #fff; /* White background for form elements */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color); /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+.cta-button {
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color); /* Primary button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1.25rem; /* Larger font size for buttons */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover-color); /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Social Icons Styling */
+.contact-us-social {
+    text-align: center; /* Center align the section */
+    margin-bottom: 2rem;
+}
+
+.contact-us-social h2 {
+    margin-bottom: 1rem; /* Add space below the heading */
+    color: var(--text-dark); /* Dark text color */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 2rem; /* Gap between social icons */
+    margin-top: 1.5rem; /* Add space above the icons */
+}
+
+.social-icon {
+    font-size: 2.5rem; /* Larger icon size */
+    color: var(--text-dark); /* Dark icon color */
+    background-color: var(--secondary-color); /* Light gray background for icons */
+    padding: 1.25rem; /* Increased padding */
+    border-radius: 5px; /* Circular icons */
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    display: inline-flex; /* Use inline-flex to ensure proper alignment */
+    align-items: center; /* Center align icon inside the circle */
+    justify-content: center; /* Center align icon inside the circle */
+    box-shadow: 0 4px 8px var(--card-shadow); /* Subtle shadow for icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-icon:hover {
+    color: #fff; /* White color on hover */
+    background-color: var(--primary-color); /* Blue background on hover */
+    transform: scale(1.1); /* Enlarge icon on hover */
+    box-shadow: 0 6px 12px rgba(240, 63, 63, 0.2); /* Enhanced shadow on hover */
+}

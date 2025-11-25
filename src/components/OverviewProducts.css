@@ -1,0 +1,50 @@
+.portal-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted to create space between sections */
+    padding: 20px;
+}
+
+.section {
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.section h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.section p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    margin-top: 20px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Products Page Background Animation */
+.products-page-bg {
+  animation: bgColorChange 10s infinite; /* Animation for background color change */
+}
+
+/* Keyframes for Background Color Change */
+@keyframes bgColorChange {
+  0% { background: #e412d2; }
+  20% { background: #e0e0e0; }
+  40% { background: #0acf7d; }
+  60% { background: #c0c0c0; }
+  80% { background: #0c0b0b; }
+  100% { background: #e1f010; }
+}
+
+/* Search Bar Styling */
+.search-bar {
+  position: relative;
+  margin-bottom: 30px; /* Increase margin for better spacing */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  max-width: 800px; /* Restrict width */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.search-input {
+  width: 100%; /* Make input flexible within its container */
+  max-width: 700px; /* Increase maximum width */
+  height: 600px; /* Increase height for better appearance */
+  padding: 0 20px; /* Add horizontal padding */
+  border-radius: 25px; /* Rounded corners for a modern look */
+  border: 1px solid #ccc;
+  font-size: 18px; /* Increase font size for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Include padding and border in width and height */
+.search-icon {
+  position: absolute;
+  right: 20px; /* Adjust position to fit larger input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 24px; /* Increase icon size for better visibility */
+}
+
+/* Products Page Styling */
+.products-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Apply animation only to the container with .products-page-bg */
+.products-page .products-page-bg {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Product Grid Styling */
+.product-grid {
+  display: flex;
+  flex-direction: row; /* Ensure the items are aligned in a row */
+  gap: 20px;
+  padding: 20px 0;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Product Card Styling */
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: 400px; /* Set a consistent height for all cards */
+  text-align: center;
+  cursor: pointer; /* Change cursor to pointer */
+  flex: 0 0 auto; /* Prevent flexbox from compressing the card */
+  display: inline-block; /* Ensure the product cards are treated as inline elements */
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Set a consistent height for all images */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  border-bottom: 1px solid #eee;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.product-card .price {
+  color: #e94e77;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background: #e94e77;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* Add horizontal padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #d43f66;
+  transform: scale(1.05);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-wrap: nowrap; /* Keep items in a single row */
+    justify-content: flex-start; /* Align items to the start of the grid */
+    overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+  }
+
+  .product-card {
+    width: 80%; /* Adjust the width of product cards for better fit */
+    max-width: 250px; /* Limit the width */
+    margin-right: 20px; /* Add margin between cards */
+  }
+}

@@ -1,0 +1,94 @@
+/* Brand Page Styling */
+.brand-page {
+    padding: 8px; /* Slightly increased padding for better spacing */
+    text-align: center;
+    max-width: 300px; /* Slightly increased width for better visibility */
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0); /* Subtle gradient background */
+    border-radius: 10px; /* Slightly larger border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+}
+
+/* Title Styling */
+.brand-page h1 {
+    margin-bottom: 8px; /* Slightly increased margin */
+    color: #e94e77;
+    font-size: 1rem; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+.brand-page h1:hover {
+    color: #d43f66;
+}
+
+/* Brand Content Styling */
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Slightly increased gap for better spacing */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Brand Info Styling */
+.brand-info {
+    background: #fff;
+    border-radius: 10px; /* Larger border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 8px; /* Slightly increased padding for better spacing */
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.brand-info::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    border-radius: 10px; /* Match border-radius */
+    z-index: -1;
+    transition: background 0.3s ease;
+}
+
+.brand-info:hover::before {
+    background: rgba(255, 255, 255, 0.7); /* Darken background on hover */
+}
+
+.brand-info:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Brand Info Header Styling */
+.brand-info h2 {
+    margin-bottom: 6px; /* Slightly increased margin */
+    color: #fff;
+    font-size: 0.8rem; /* Increased font size */
+    background: linear-gradient(90deg, #e94e77, #d43f66); /* Gradient background */
+    -webkit-background-clip: text; /* Gradient text */
+    -webkit-text-fill-color: transparent; /* Transparent text fill */
+    padding: 4px 8px; /* Slightly increased padding */
+    border-radius: 8px; /* Larger border-radius */
+    transition: background 0.3s ease;
+}
+
+.brand-info h2:hover {
+    color: #a6ff00;/* Reverse gradient on hover */
+}
+
+/* Brand Info Paragraph Styling */
+.brand-info p {
+    color: #666;
+    font-size: 0.6rem; /* Slightly increased font size */
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .brand-content {
+        flex-direction: column;
+        gap: 6px; /* Adjust gap for mobile view */
+    }
+}

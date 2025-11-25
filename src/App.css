@@ -1,0 +1,267 @@
+/* General Styles */
+.App {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+/* Example for adding margin directly to the buttons */
+/* Add a 3cm gap to the right of the first button */
+.cta-button {
+    margin-right: 9cm; /* Creates a gap of 3cm */
+  }
+  
+  /* Optional: If you want to control the spacing in a specific way */
+  .track-order-button {
+    /* No additional margin needed here */
+  }
+  
+/* Hero Section */
+.hero {
+    background: url('./assets/landing-page-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e94e77;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d43f6c;
+    transform: scale(1.05);
+}
+
+/* Track Order Button */
+.track-order-button {
+    background-color: #ccd821; /* Blue background for Track Order */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.track-order-button:hover {
+    background-color: #35bda6;
+    transform: scale(1.05);
+}
+
+/* Customer Reviews */
+.customer-reviews {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+}
+
+.customer-reviews h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.review-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.review-card span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Promotions */
+.promotions {
+    padding: 40px 20px;
+    background-color: #e0f2f1;
+}
+
+.promotions h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-align: center;
+}
+
+.promo-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.promo-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Blog */
+.blog {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+}
+
+.blog h2  {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.read-more {
+    color: #e94e77;
+    text-decoration: none;
+}
+
+/* Newsletter */
+/* Style for the newsletter section */
+.newsletter {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text content */
+    padding: 20px; /* Add some padding around the section */
+  }
+  
+  /* Style for the form container */
+  .newsletter-form {
+    display: flex; /* Use flexbox to align input and button */
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Add space between input and button */
+    width: 100%; /* Full width for responsive design */
+    max-width: 500px; /* Optional: Limit the form's width */
+    margin: 0 auto; /* Center the form horizontally within the section */
+  }
+  
+  /* Style for the input field */
+  .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%; /* Make input field fill its container */
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+  }
+  
+  /* Style for the button */
+  .newsletter-form button {
+    background-color: #e94e77;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button fill its container */
+    max-width: 200px; /* Optional: Limit button width */
+  }
+  
+  
+
+.newsletter-form button:hover {
+    background-color: #d43f6c;
+}
